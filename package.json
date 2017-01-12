@@ -1,0 +1,42 @@
+{
+  "name": "example-vue-jsdom-canvas",
+  "version": "1.0.0",
+  "description": "Example Project for Vue.js + JSDOM + webpack + Mocha + Canvas with image diffing",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js --progress --hide-modules",
+    "test": "npm run build && mocha -r register ./dist/bundle.js"
+  },
+  "keywords": [
+    "mocha",
+    "vue",
+    "vuejs",
+    "jsdom",
+    "webpack",
+    "canvas"
+  ],
+  "author": "Jeff Haynie",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^1.6.2",
+    "jquery": "^3.1.1",
+    "vue": "^2.1.8"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "css-loader": "^0.26.1",
+    "image-diff": "^1.6.3",
+    "jsdom": "9.9.1",
+    "jsdom-global": "2.1.1",
+    "mocha": "^3.2.0",
+    "should": "^11.1.2",
+    "vue-loader": "^10.0.2",
+    "vue-template-compiler": "^2.1.8",
+    "webpack": "^1.14.0",
+    "webpack-node-externals": "^1.5.4"
+  }
+}
